@@ -1,0 +1,1975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MgInterface</class>
+ <widget class="QWidget" name="MgInterface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MgInterface</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">ToolButtom{background-color: rgba(255, 255, 255, 0);}</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>160</y>
+     <width>1137</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Adobe Arabic</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="tabletTracking">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::West</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Triangular</enum>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <property name="documentMode">
+    <bool>true</bool>
+   </property>
+   <property name="tabBarAutoHide">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="tab_A">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <attribute name="title">
+     <string>图书管理</string>
+    </attribute>
+    <widget class="QTabWidget" name="tabWidgetOfA">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1100</width>
+       <height>720</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 50);
+font: 16pt &quot;Adobe 黑体 Std R&quot;;</string>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::North</enum>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="documentMode">
+      <bool>true</bool>
+     </property>
+     <property name="tabBarAutoHide">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="tab_A_1">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <attribute name="title">
+       <string>修改/下架</string>
+      </attribute>
+      <widget class="QWidget" name="MyBookToolBar" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>360</y>
+         <width>1100</width>
+         <height>320</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(85, 255, 255);</string>
+       </property>
+       <widget class="QLineEdit" name="bookBarKey">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>5</y>
+          <width>400</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe 黑体 Std R</family>
+          <pointsize>16</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgba(255, 255, 255, 0)</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>请输入查询关键字或13位ISBN码</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bkBarChgeHead">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>240</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/固定/Resources/固定/登录按钮tip.jpg);</string>
+        </property>
+        <property name="text">
+         <string>更换图片</string>
+        </property>
+       </widget>
+       <widget class="QToolButton" name="bookBarSearch">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>5</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../BMS.qrc">
+          <normaloff>:/用户界面小按钮/Resources/小按钮/search.ico</normaloff>:/用户界面小按钮/Resources/小按钮/search.ico</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>68</width>
+          <height>68</height>
+         </size>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::DelayedPopup</enum>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+        <property name="arrowType">
+         <enum>Qt::NoArrow</enum>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="cmbType">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>5</y>
+          <width>221</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>不限制分类</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="cmbPublish">
+        <property name="geometry">
+         <rect>
+          <x>651</x>
+          <y>5</y>
+          <width>203</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>不限制出版社</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="cmbAuthor">
+        <property name="geometry">
+         <rect>
+          <x>456</x>
+          <y>5</y>
+          <width>190</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>不限制作者</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="cmbKuCun">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>50</y>
+          <width>211</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>库存(默认排序)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>库存降序</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>库存升序</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="cmbDate">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>50</y>
+          <width>205</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>日期(默认排序)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>日期降序</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>日期升序</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="bkBarAlter">
+        <property name="geometry">
+         <rect>
+          <x>940</x>
+          <y>220</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/固定/Resources/固定/登录按钮tip.jpg);</string>
+        </property>
+        <property name="text">
+         <string>修改</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bkBarDelete">
+        <property name="geometry">
+         <rect>
+          <x>940</x>
+          <y>160</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/固定/Resources/固定/登录按钮tip.jpg);</string>
+        </property>
+        <property name="text">
+         <string>下架</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bookBarSelect">
+        <property name="geometry">
+         <rect>
+          <x>920</x>
+          <y>110</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/固定/Resources/固定/登录按钮tip.jpg);</string>
+        </property>
+        <property name="text">
+         <string>全选/全不选</string>
+        </property>
+       </widget>
+       <widget class="HeadPor" name="bkBarHead">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>98</y>
+          <width>100</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>100</y>
+          <width>731</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QLineEdit" name="bkBarISBN">
+             <property name="toolTip">
+              <string>ISBN</string>
+             </property>
+             <property name="statusTip">
+              <string/>
+             </property>
+             <property name="whatsThis">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>ISBN</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="bkBarName">
+             <property name="toolTip">
+              <string>书名</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>书名</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="bkBarAuthor">
+             <property name="toolTip">
+              <string>作者</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>作者</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="bookBarcategory">
+             <property name="toolTip">
+              <string>分类</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>分类</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLineEdit" name="bkBarPubCompany">
+             <property name="toolTip">
+              <string>出版社</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>出版社</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="bkBarPubDate">
+             <property name="toolTip">
+              <string>出版日期</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>出版日期</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="bkBarTableNumber">
+             <property name="toolTip">
+              <string>索书号</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>索书号</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="bkBarStorageRate">
+             <property name="toolTip">
+              <string>库存容量</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>库存容量</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPlainTextEdit" name="bkBarIntroduction">
+           <property name="toolTip">
+            <string>简介</string>
+           </property>
+           <property name="plainText">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QToolButton" name="btnBookBarHide">
+       <property name="geometry">
+        <rect>
+         <x>1030</x>
+         <y>320</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 150);</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>68</width>
+         <height>68</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+       <property name="arrowType">
+        <enum>Qt::DownArrow</enum>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="listWidgetOfBook">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1094</width>
+         <height>673</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+      </widget>
+      <widget class="QFrame" name="cannotFound">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>70</y>
+         <width>271</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/固定/Resources/固定/找不到结果.png);
+background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+      <zorder>listWidgetOfBook</zorder>
+      <zorder>MyBookToolBar</zorder>
+      <zorder>btnBookBarHide</zorder>
+      <zorder>cannotFound</zorder>
+     </widget>
+     <widget class="QWidget" name="tab_A_2">
+      <property name="styleSheet">
+       <string notr="true">QLabel{background-color: rgba(255, 255, 255, 0);}</string>
+      </property>
+      <attribute name="title">
+       <string>上架</string>
+      </attribute>
+      <widget class="QPushButton" name="sJiaChooseFile">
+       <property name="geometry">
+        <rect>
+         <x>770</x>
+         <y>86</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/固定/Resources/固定/登录按钮tip.jpg);</string>
+       </property>
+       <property name="text">
+        <string>选择文件</string>
+       </property>
+      </widget>
+      <widget class="HeadPor" name="sJiaHead">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>270</y>
+         <width>100</width>
+         <height>130</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 255, 127);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="sJiaChgeHead">
+       <property name="geometry">
+        <rect>
+         <x>64</x>
+         <y>410</y>
+         <width>112</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/固定/Resources/固定/登录按钮tip.jpg);</string>
+       </property>
+       <property name="text">
+        <string>更换图片</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="sJiaOK">
+       <property name="geometry">
+        <rect>
+         <x>870</x>
+         <y>540</y>
+         <width>131</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/固定/Resources/固定/登录按钮tip.jpg);</string>
+       </property>
+       <property name="text">
+        <string>确  认</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="sJiaFilepath">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>86</y>
+         <width>531</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(85, 255, 255, 100);</string>
+       </property>
+       <property name="text">
+        <string>未选择有效文件!!!</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>160</y>
+         <width>1094</width>
+         <height>5</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>3</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>180</y>
+         <width>371</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(170, 255, 0, 150);
+</string>
+       </property>
+       <property name="text">
+        <string>批   量   导   入</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>10</y>
+         <width>371</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(170, 255, 0, 150);</string>
+       </property>
+       <property name="text">
+        <string>单   本   录   入</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="sJiaIntroduction">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>470</y>
+         <width>471</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="plainText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>203</x>
+         <y>470</y>
+         <width>108</width>
+         <height>45</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>108</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 100);
+</string>
+       </property>
+       <property name="text">
+        <string>简介</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>250</y>
+         <width>831</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="minimumSize">
+               <size>
+                <width>108</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(255, 255, 255, 100);
+</string>
+              </property>
+              <property name="text">
+               <string>ISBN</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="sJiaISBN">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="minimumSize">
+               <size>
+                <width>108</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(255, 255, 255, 100);
+</string>
+              </property>
+              <property name="text">
+               <string>书名</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="sJiaName">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="minimumSize">
+               <size>
+                <width>108</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(255, 255, 255, 100);
+</string>
+              </property>
+              <property name="text">
+               <string>作者</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="sJiaAuthor">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="minimumSize">
+               <size>
+                <width>108</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(255, 255, 255, 100);
+</string>
+              </property>
+              <property name="text">
+               <string>分类</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="sJiaCategory">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="minimumSize">
+               <size>
+                <width>108</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(255, 255, 255, 100);
+</string>
+              </property>
+              <property name="text">
+               <string>出版社</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="sJiaPubCompany">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="minimumSize">
+               <size>
+                <width>108</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(255, 255, 255, 100);
+</string>
+              </property>
+              <property name="text">
+               <string>出版日期</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="sJiaPubDate">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="minimumSize">
+               <size>
+                <width>108</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(255, 255, 255, 100);
+</string>
+              </property>
+              <property name="text">
+               <string>索书号</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="sJiaTableNumber">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="minimumSize">
+               <size>
+                <width>108</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(255, 255, 255, 100);
+</string>
+              </property>
+              <property name="text">
+               <string>库存容量</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="sJiaStorageRate">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <zorder>layoutWidget</zorder>
+      <zorder>sJiaChooseFile</zorder>
+      <zorder>sJiaHead</zorder>
+      <zorder>sJiaChgeHead</zorder>
+      <zorder>sJiaFilepath</zorder>
+      <zorder>line_2</zorder>
+      <zorder>label_11</zorder>
+      <zorder>sJiaOK</zorder>
+      <zorder>label_12</zorder>
+      <zorder>sJiaIntroduction</zorder>
+      <zorder>label_13</zorder>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_B">
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+background-color: rgba(255, 255, 255, 100);font: 15pt &quot;Adobe 黑体 Std R&quot;;}
+QPushButton, QLineEdit{font: 15pt &quot;Adobe 黑体 Std R&quot;;}</string>
+    </property>
+    <attribute name="title">
+     <string>借阅管理</string>
+    </attribute>
+    <widget class="QLineEdit" name="jYueLIneID">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>360</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>输入姓名关键字或10位学号</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="jYueLineISBN">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>20</y>
+       <width>360</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>输入书名关键字或17位ISBN码</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="jYueOrder">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>25</y>
+       <width>110</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>借阅</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>查询</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>退还</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QListWidget" name="listLeft">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>90</y>
+       <width>550</width>
+       <height>631</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 170, 255, 100);</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listRight">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>90</y>
+       <width>550</width>
+       <height>631</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 255, 255, 100);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="jYueButton">
+     <property name="geometry">
+      <rect>
+       <x>971</x>
+       <y>25</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/固定/Resources/固定/登录按钮tip.jpg);</string>
+     </property>
+     <property name="text">
+      <string>确定</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="cannotFoundLeft">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>230</y>
+       <width>271</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/固定/Resources/固定/找不到结果.png);
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="cannotFoundRight">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>220</y>
+       <width>271</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/固定/Resources/固定/找不到结果.png);
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <zorder>jYueLIneID</zorder>
+    <zorder>jYueLineISBN</zorder>
+    <zorder>jYueOrder</zorder>
+    <zorder>listLeft</zorder>
+    <zorder>jYueButton</zorder>
+    <zorder>listRight</zorder>
+    <zorder>cannotFoundLeft</zorder>
+    <zorder>cannotFoundRight</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_C">
+    <attribute name="title">
+     <string>用户管理</string>
+    </attribute>
+    <widget class="QFrame" name="userBar">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>420</y>
+       <width>1091</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#userBar{background-color: rgb(170, 255, 255);}
+
+QLineEdit,QComboBox,QPushButton,QLabel{font: 16pt &quot;Adobe 黑体 Std R&quot;;}
+
+QPushButton{background-image: url(:/固定/Resources/固定/登录按钮tip.jpg);}
+
+QComboBox{background-color: rgb(255, 170, 255, 150);}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QComboBox" name="userBarCBSex">
+      <property name="geometry">
+       <rect>
+        <x>765</x>
+        <y>5</y>
+        <width>150</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>不限性别</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>男</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>女</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="userBarCBSort">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>5</y>
+        <width>160</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>学号升序</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>学号降序</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="userBarKey">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>5</y>
+        <width>400</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Adobe 黑体 Std R</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgba(255, 255, 255, 0)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>请输入姓名关键字或10位学号</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="userBarCBClass">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>5</y>
+        <width>150</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>不限班级</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QToolButton" name="userBarSearch">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>5</y>
+        <width>40</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../BMS.qrc">
+        <normaloff>:/用户界面小按钮/Resources/小按钮/search.ico</normaloff>:/用户界面小按钮/Resources/小按钮/search.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>68</width>
+        <height>68</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="userBarCBInstitute">
+      <property name="geometry">
+       <rect>
+        <x>455</x>
+        <y>5</y>
+        <width>150</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>不限学院</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="HeadPor" name="userBarHead">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>80</y>
+        <width>120</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 255, 127);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="userBarOK">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>220</y>
+        <width>111</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>确认</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="userBarDelete">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>170</y>
+        <width>111</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>删除</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="userBarSelectAll">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>120</y>
+        <width>151</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>全选/全不选</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="userBarResetPW">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>70</y>
+        <width>151</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>重置密码</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="userBarPower">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>160</y>
+        <width>141</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="userBarID">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>110</y>
+        <width>161</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>70</y>
+        <width>461</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <item>
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>姓名</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="userBarName">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <item>
+          <widget class="QLabel" name="label_16">
+           <property name="text">
+            <string>性别</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="userBarSex">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_13">
+         <item>
+          <widget class="QLabel" name="label_17">
+           <property name="text">
+            <string>学院</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="userBarInstitute">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_14">
+         <item>
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>班级</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="userBarClass">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QListWidget" name="listUser">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1091</width>
+       <height>721</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255, 100);</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="userBarHide">
+     <property name="geometry">
+      <rect>
+       <x>1030</x>
+       <y>380</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 200);</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>68</width>
+       <height>68</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::DownArrow</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="userCannotFound">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>100</y>
+       <width>271</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/固定/Resources/固定/找不到结果.png);
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <zorder>listUser</zorder>
+    <zorder>userBar</zorder>
+    <zorder>userBarHide</zorder>
+    <zorder>userCannotFound</zorder>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="beiJingBan">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>900</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#beiJingBan{
+image: url(:/用户界面/Resources/用户界面/用户主背景.jpg);}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="MessageButton" name="btnMessage">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>0</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>最小化</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/用户界面小按钮/Resources/小按钮/消息.png</normaloff>:/用户界面小按钮/Resources/小按钮/消息.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btnClose">
+    <property name="geometry">
+     <rect>
+      <x>1155</x>
+      <y>5</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>最小化</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../BMS.qrc">
+      <normaloff>:/用户界面小按钮/Resources/小按钮/实心关闭.png</normaloff>:/用户界面小按钮/Resources/小按钮/实心关闭.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btnMin">
+    <property name="geometry">
+     <rect>
+      <x>1105</x>
+      <y>0</y>
+      <width>50</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>最小化</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../BMS.qrc">
+      <normaloff>:/用户界面小按钮/Resources/小按钮/实心最小化.png</normaloff>:/用户界面小按钮/Resources/小按钮/实心最小化.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>51</width>
+      <height>49</height>
+     </size>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btnHelp">
+    <property name="geometry">
+     <rect>
+      <x>1064</x>
+      <y>5</y>
+      <width>45</width>
+      <height>43</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>最小化</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../BMS.qrc">
+      <normaloff>:/用户界面小按钮/Resources/小按钮/实心帮助.png</normaloff>:/用户界面小按钮/Resources/小按钮/实心帮助.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btnCloth">
+    <property name="geometry">
+     <rect>
+      <x>1023</x>
+      <y>7</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>最小化</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../BMS.qrc">
+      <normaloff>:/用户界面小按钮/Resources/小按钮/皮肤.png</normaloff>:/用户界面小按钮/Resources/小按钮/皮肤.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>10</y>
+      <width>139</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);
+font: 12pt &quot;Adobe 黑体 Std R&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>1704040212</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>我的信息</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>修改密码</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>注销登录</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>退出登录</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="HeadPor" name="frameHead">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 0);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>80</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 黑体 Std R</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>你好，韩广阳</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>167</x>
+      <y>113</y>
+      <width>169</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btnFreshen">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>7</y>
+      <width>47</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>最小化</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../BMS.qrc">
+      <normaloff>:/用户界面小按钮/Resources/小按钮/刷新.png</normaloff>:/用户界面小按钮/Resources/小按钮/刷新.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>line</zorder>
+   <zorder>btnMessage</zorder>
+   <zorder>btnClose</zorder>
+   <zorder>btnMin</zorder>
+   <zorder>btnHelp</zorder>
+   <zorder>btnCloth</zorder>
+   <zorder>comboBox</zorder>
+   <zorder>frameHead</zorder>
+   <zorder>label</zorder>
+   <zorder>btnFreshen</zorder>
+  </widget>
+  <zorder>beiJingBan</zorder>
+  <zorder>tabWidget</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>HeadPor</class>
+   <extends>QFrame</extends>
+   <header location="global">headpor.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MessageButton</class>
+   <extends>QToolButton</extends>
+   <header location="global">messagebutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../BMS.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1555816968 source:c:\users\hp\desktop\生成数据\src\randominput.cpp
+	"RandomInput.h"
+
+1555816968 c:\users\hp\desktop\生成数据\include\randominput.h
+	<windows.h>
+	<ctime>
+	<string>
+
+1555947914 source:c:\users\hp\desktop\生成数据\main.cpp
+	<bits/stdc++.h>
+	"RandomInput.h"
+
+1555948058 source:c:\users\hp\desktop\生成数据\randominput.cpp
+	"RandomInput.h"
+
+1555947757 c:\users\hp\desktop\生成数据\randominput.h
+	<windows.h>
+	<ctime>
+	<bits/stdc++.h>
+
+1556718365 source:d:\d盘桌面\生成数据\main.cpp
+	<bits/stdc++.h>
+	"RandomInput.h"
+
+1556702361 d:\d盘桌面\生成数据\randominput.h
+	<windows.h>
+	<ctime>
+	<bits/stdc++.h>
+
+1556703295 source:d:\d盘桌面\生成数据\randominput.cpp
+	"RandomInput.h"
+

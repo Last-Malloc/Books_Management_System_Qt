@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ManaBookItem</class>
+ <widget class="QWidget" name="ManaBookItem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>ManaBookItem</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#ManaBookItem{background-color: rgb(255, 255, 0);}
+QLabel{
+font: 16pt &quot;Adobe 黑体 Std R&quot;;}</string>
+  </property>
+  <widget class="HeadPor" name="frameHead">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>100</width>
+     <height>130</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="introduction">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>10</y>
+     <width>231</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Adobe Arabic&quot;;</string>
+   </property>
+   <property name="text">
+    <string>本书首先界定了法律的定义，认定法律是与地理、土壤、气候、人种、风俗、习惯、宗教信仰、人口和商业等关系的综合。</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>50</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../BMS.qrc">
+     <normaloff>:/用户界面小按钮/Resources/小按钮/未选中.png</normaloff>:/用户界面小按钮/Resources/小按钮/未选中.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="popupMode">
+    <enum>QToolButton::DelayedPopup</enum>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pubCompany">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>38</y>
+     <width>193</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>百花文艺出版社</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pubDate">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>83</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2010.1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ISBN">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>20</y>
+     <width>235</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>437-8-6111-4677-8</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="name">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>63</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>论法的精神</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="author">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>105</y>
+     <width>86</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>王秀丽</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="category">
+   <property name="geometry">
+    <rect>
+     <x>363</x>
+     <y>63</y>
+     <width>142</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>分类:DF896</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tableNumber">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>105</y>
+     <width>209</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>索书号:DF896/35</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="storageRate">
+   <property name="geometry">
+    <rect>
+     <x>393</x>
+     <y>20</y>
+     <width>118</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>库存:66</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>148</y>
+     <width>1100</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>HeadPor</class>
+   <extends>QFrame</extends>
+   <header location="global">headpor.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../BMS.qrc"/>
+ </resources>
+ <connections/>
+</ui>

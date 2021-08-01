@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserInterface</class>
+ <widget class="QWidget" name="UserInterface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1199</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>UserInterface</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QComboBox{background-color: rgba(255, 255, 255, 50);}
+
+QLabel{
+font: 16pt &quot;Adobe 黑体 Std R&quot;;}</string>
+  </property>
+  <widget class="HeadPor" name="frameHead">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>18</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>57</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Adobe 黑体 Std R</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>你好，韩广阳</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnCloth">
+   <property name="geometry">
+    <rect>
+     <x>1028</x>
+     <y>2</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>最小化</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../BMS.qrc">
+     <normaloff>:/用户界面小按钮/Resources/小按钮/皮肤.png</normaloff>:/用户界面小按钮/Resources/小按钮/皮肤.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnHelp">
+   <property name="geometry">
+    <rect>
+     <x>1069</x>
+     <y>0</y>
+     <width>45</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>最小化</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../BMS.qrc">
+     <normaloff>:/用户界面小按钮/Resources/小按钮/实心帮助.png</normaloff>:/用户界面小按钮/Resources/小按钮/实心帮助.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnClose">
+   <property name="geometry">
+    <rect>
+     <x>1160</x>
+     <y>0</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>最小化</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../BMS.qrc">
+     <normaloff>:/用户界面小按钮/Resources/小按钮/实心关闭.png</normaloff>:/用户界面小按钮/Resources/小按钮/实心关闭.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnMin">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>-5</y>
+     <width>50</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>最小化</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../BMS.qrc">
+     <normaloff>:/用户界面小按钮/Resources/小按钮/实心最小化.png</normaloff>:/用户界面小按钮/Resources/小按钮/实心最小化.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>51</width>
+     <height>49</height>
+    </size>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>885</x>
+     <y>5</y>
+     <width>139</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+font: 12pt &quot;Adobe 黑体 Std R&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>1704040212</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>我的信息</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>修改密码</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>注销登录</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>退出登录</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>900</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#frame{image: url(:/用户界面/Resources/用户界面/用户主背景.jpg);}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QToolButton" name="btnSearch">
+    <property name="geometry">
+     <rect>
+      <x>827</x>
+      <y>115</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../BMS.qrc">
+      <normaloff>:/用户界面小按钮/Resources/小按钮/search.ico</normaloff>:/用户界面小按钮/Resources/小按钮/search.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>68</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>115</y>
+      <width>511</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 黑体 Std R</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(255, 255, 255, 0)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>请输入查询关键字或13位ISBN码</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>27</x>
+      <y>232</y>
+      <width>1143</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe Arabic</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::West</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Triangular</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="documentMode">
+     <bool>true</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tab">
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox{
+background-color: rgba(255, 255, 255, 100);font: 15pt &quot;Adobe 黑体 Std R&quot;;}
+</string>
+     </property>
+     <attribute name="title">
+      <string>书籍查询</string>
+     </attribute>
+     <widget class="QListWidget" name="listBook">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>1100</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="batchSize">
+       <number>100</number>
+      </property>
+      <property name="selectionRectVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="cannotFound">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>250</y>
+        <width>271</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/固定/Resources/固定/找不到结果.png);
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cmbAuthor">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>220</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>不限制作者</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="cmbType">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>0</y>
+        <width>220</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>不限制分类</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="cmbPublish">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>0</y>
+        <width>220</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>不限制出版社</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="cmbKuCun">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>0</y>
+        <width>200</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>库存(默认排序)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>库存降序</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>库存升序</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="cmbDate">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>0</y>
+        <width>240</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>出版日期(默认排序)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>出版日期降序</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>出版日期升序</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <attribute name="title">
+      <string>我的借阅</string>
+     </attribute>
+     <widget class="QListWidget" name="listLoan">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1100</width>
+        <height>641</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QToolButton" name="btnFreshen">
+    <property name="geometry">
+     <rect>
+      <x>835</x>
+      <y>0</y>
+      <width>47</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>最小化</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../BMS.qrc">
+      <normaloff>:/用户界面小按钮/Resources/小按钮/刷新.png</normaloff>:/用户界面小按钮/Resources/小按钮/刷新.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>93</y>
+     <width>169</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>frameHead</zorder>
+  <zorder>btnCloth</zorder>
+  <zorder>btnHelp</zorder>
+  <zorder>btnClose</zorder>
+  <zorder>btnMin</zorder>
+  <zorder>comboBox</zorder>
+  <zorder>line</zorder>
+  <zorder>label</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>HeadPor</class>
+   <extends>QFrame</extends>
+   <header location="global">headpor.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../BMS.qrc"/>
+ </resources>
+ <connections/>
+</ui>

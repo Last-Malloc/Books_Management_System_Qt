@@ -1,0 +1,13 @@
+﻿  Rcc'ing BMS.qrc...
+  Moc'ing src\MgInterface.h...
+  Moc'ing src\UserInterface.h...
+  moc_BMS.cpp
+  moc_MgInterface.cpp
+  moc_UserInterface.cpp
+  qrc_BMS.cpp
+  BMS.cpp
+  MessageWindow.cpp
+  MgInterface.cpp
+  UserInterface.cpp
+  main.cpp
+  BMS.vcxproj -> D:\D盘桌面\BMS\BMS\x64\Release\BMS.exe

@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="用户页面">
+      <UniqueIdentifier>{eca23657-0e6e-4609-848e-476f20b85869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="人员继承">
+      <UniqueIdentifier>{b1e63b99-5dee-4d46-ac24-66fca60b2849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="管理员界面">
+      <UniqueIdentifier>{0c70c18d-350c-46cd-8da1-52d5647ba12e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="登录界面">
+      <UniqueIdentifier>{fe7f4a02-757d-4fe0-b766-8b8a1537bbe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files\Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Form Files\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Form Files\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="文件系统/其他">
+      <UniqueIdentifier>{2edbc364-298d-4a97-886e-f4e5c935ebf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="自定义列表托管">
+      <UniqueIdentifier>{e5491ae7-a275-4cba-87b9-77550549f6e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\Source Files\Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="管理员申请窗口">
+      <UniqueIdentifier>{b68dc35b-c5d7-411c-a470-d78fb918850e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="BMS.qrc">
+      <Filter>Form Files\Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\FileManage.h">
+      <Filter>文件系统/其他</Filter>
+    </ClInclude>
+    <ClInclude Include="src\People.h">
+      <Filter>人员继承</Filter>
+    </ClInclude>
+    <ClInclude Include="src\User.h">
+      <Filter>人员继承</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AfCd.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GBK.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\myTimeDeal.h">
+      <Filter>文件系统/其他</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Manager.h">
+      <Filter>人员继承</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\FileManage.cpp">
+      <Filter>文件系统/其他</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UserInterface.cpp">
+      <Filter>用户页面</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BookItemDrawer.cpp">
+      <Filter>用户页面</Filter>
+    </ClCompile>
+    <ClCompile Include="src\People.cpp">
+      <Filter>人员继承</Filter>
+    </ClCompile>
+    <ClCompile Include="src\User.cpp">
+      <Filter>人员继承</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WinMyInfo.cpp">
+      <Filter>用户页面</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MyLoanItem.cpp">
+      <Filter>用户页面</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AfCd_Win32.cpp">
+      <Filter>Form Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FindPassword.cpp">
+      <Filter>登录界面</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TipWindow.cpp">
+      <Filter>登录界面</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeadPor.cpp">
+      <Filter>登录界面</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BMS.cpp">
+      <Filter>登录界面</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Register.cpp">
+      <Filter>登录界面</Filter>
+    </ClCompile>
+    <ClCompile Include="src\myTimeDeal.cpp">
+      <Filter>文件系统/其他</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MgInterface.cpp">
+      <Filter>管理员界面</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ManaBookItem.cpp">
+      <Filter>管理员界面</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>登录界面</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Manager.cpp">
+      <Filter>人员继承</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ManaUserItem.cpp">
+      <Filter>管理员界面</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ListLeftOfA.cpp">
+      <Filter>自定义列表托管</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ListRightOfA.cpp">
+      <Filter>自定义列表托管</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ListLeftOfB.cpp">
+      <Filter>自定义列表托管</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ListRightOfB.cpp">
+      <Filter>自定义列表托管</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MessageWindow.cpp">
+      <Filter>管理员申请窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ListMessage.cpp">
+      <Filter>管理员申请窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MessageButton.cpp">
+      <Filter>管理员界面</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\UserInterface.h">
+      <Filter>用户页面</Filter>
+    </QtMoc>
+    <QtMoc Include="src\BookItemDrawer.h">
+      <Filter>用户页面</Filter>
+    </QtMoc>
+    <QtMoc Include="src\WinMyInfo.h">
+      <Filter>用户页面</Filter>
+    </QtMoc>
+    <QtMoc Include="src\MyLoanItem.h">
+      <Filter>用户页面</Filter>
+    </QtMoc>
+    <QtMoc Include="src\BMS.h">
+      <Filter>登录界面</Filter>
+    </QtMoc>
+    <QtMoc Include="src\FindPassword.h">
+      <Filter>登录界面</Filter>
+    </QtMoc>
+    <QtMoc Include="src\TipWindow.h">
+      <Filter>登录界面</Filter>
+    </QtMoc>
+    <QtMoc Include="src\HeadPor.h">
+      <Filter>登录界面</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Register.h">
+      <Filter>登录界面</Filter>
+    </QtMoc>
+    <QtMoc Include="src\MgInterface.h">
+      <Filter>管理员界面</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ManaBookItem.h">
+      <Filter>管理员界面</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ManaUserItem.h">
+      <Filter>管理员界面</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ListLeftOfA.h">
+      <Filter>自定义列表托管</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ListRightOfA.h">
+      <Filter>自定义列表托管</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ListLeftOfB.h">
+      <Filter>自定义列表托管</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ListRightOfB.h">
+      <Filter>自定义列表托管</Filter>
+    </QtMoc>
+    <QtMoc Include="src\MessageWindow.h">
+      <Filter>管理员申请窗口</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ListMessage.h">
+      <Filter>管理员申请窗口</Filter>
+    </QtMoc>
+    <QtMoc Include="src\MessageButton.h">
+      <Filter>管理员界面</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\UserInterface.ui">
+      <Filter>用户页面</Filter>
+    </QtUic>
+    <QtUic Include="src\WinMyInfo.ui">
+      <Filter>用户页面</Filter>
+    </QtUic>
+    <QtUic Include="src\MyLoanItem.ui">
+      <Filter>用户页面</Filter>
+    </QtUic>
+    <QtUic Include="src\BMS.ui">
+      <Filter>登录界面</Filter>
+    </QtUic>
+    <QtUic Include="src\FindPassword.ui">
+      <Filter>登录界面</Filter>
+    </QtUic>
+    <QtUic Include="src\TipWindow.ui">
+      <Filter>登录界面</Filter>
+    </QtUic>
+    <QtUic Include="src\Register.ui">
+      <Filter>登录界面</Filter>
+    </QtUic>
+    <QtUic Include="src\MgInterface.ui">
+      <Filter>管理员界面</Filter>
+    </QtUic>
+    <QtUic Include="src\ManaBookItem.ui">
+      <Filter>管理员界面</Filter>
+    </QtUic>
+    <QtUic Include="src\ManaUserItem.ui">
+      <Filter>管理员界面</Filter>
+    </QtUic>
+    <QtUic Include="src\MessageWindow.ui">
+      <Filter>管理员申请窗口</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BMS.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\BMS图标.ico" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,48 @@
+<RCC>
+  <qresource prefix="管理员界面">
+    <file>Resources/主背景/MessageImage.jpg</file>
+  </qresource>
+  <qresource prefix="用户界面">
+    <file>Resources/固定/我的信息背景.jpg</file>
+    <file>Resources/用户界面/用户主背景.jpg</file>
+  </qresource>
+  <qresource prefix="/用户界面小按钮">
+    <file>Resources/小按钮/刷新.png</file>
+    <file>Resources/小按钮/信息.png</file>
+    <file>Resources/小按钮/未选中.png</file>
+    <file>Resources/小按钮/选中.png</file>
+    <file>Resources/小按钮/隐藏.png</file>
+    <file>Resources/小按钮/search.ico</file>
+    <file>Resources/小按钮/实心i.png</file>
+    <file>Resources/小按钮/实心帮助.png</file>
+    <file>Resources/小按钮/实心关闭.png</file>
+    <file>Resources/小按钮/实心最小化.png</file>
+    <file>Resources/小按钮/皮肤.png</file>
+  </qresource>
+  <qresource prefix="/小按钮">
+    <file>Resources/小按钮/显示密码.png</file>
+    <file>Resources/小按钮/隐藏密码.png</file>
+  </qresource>
+  <qresource prefix="/固定">
+    <file>bin/bookImage/默认书籍图片.png</file>
+    <file>Resources/主背景/默认.jpg</file>
+    <file>Resources/固定/找不到结果.png</file>
+    <file>Resources/固定/找回密码背景.jpg</file>
+    <file>Resources/固定/登录按钮tip.jpg</file>
+    <file>Resources/固定/背景tip.jpg</file>
+  </qresource>
+  <qresource prefix="/主界面背景">
+    <file>Resources/主背景/背景1.jpg</file>
+  </qresource>
+  <qresource prefix="/登录界面的固定图片">
+    <file>Resources/BMS图标.ico</file>
+    <file>Resources/固定/登录按钮.jpg</file>
+    <file>Resources/固定/背景2.jpg</file>
+    <file>Resources/小按钮/设置.ico</file>
+    <file>Resources/固定/背景1.jpg</file>
+    <file>Resources/小按钮/密码.ico</file>
+    <file>Resources/小按钮/用户名.ico</file>
+    <file>Resources/小按钮/退出.ico</file>
+    <file>Resources/小按钮/最小化.ico</file>
+  </qresource>
+</RCC>
